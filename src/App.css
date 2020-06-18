@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: calc(100% / 4);
   text-decoration: none;
   padding: 10px 0;
@@ -34,7 +35,7 @@
 }
 
 .carousel {
-  width: 65%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -113,6 +114,7 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
+  align-items: flex-start;
   flex-wrap: wrap;
   text-align: left;
 }
@@ -130,6 +132,7 @@
   width: 40%;
   margin: 0 5%;
   margin-bottom: 10px;
+  flex-direction: column;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -141,6 +144,12 @@
 .gallery > * > img{
   height: 400px;
   object-fit: contain;
+}
+
+@media only screen and (max-width: 900px) {
+  .gallery > * {
+    width: 90%;
+  }
 }
 
 .contact > h1 {
